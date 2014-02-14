@@ -21,7 +21,7 @@ class UserController < ApplicationController
     end
 
     def index
-        render "client"
+        render "test"
     end
 
     private
