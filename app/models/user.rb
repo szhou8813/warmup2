@@ -18,7 +18,7 @@ class User < ActiveRecord::Base
     }
 
     validates :name, uniqueness: {
-        true, message: -2
+        message: -2
     }
 
 end
