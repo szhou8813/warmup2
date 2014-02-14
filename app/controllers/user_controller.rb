@@ -22,6 +22,7 @@ class UserController < ApplicationController
 
     def index
         render "client"
+    end
 
     private
         def user_params
