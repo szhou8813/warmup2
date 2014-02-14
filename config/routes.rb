@@ -1,12 +1,11 @@
 Warmup::Application.routes.draw do
-  get "user/add"
-  get "user/login"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'user#login'
-
+  root 'user#client'
+  get '/users/login', to 'user#login'
+  get '/users/add', to 'user#add'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
