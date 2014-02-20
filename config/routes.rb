@@ -4,6 +4,7 @@ Warmup::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   #  root 'user#index'
+  root 'mainpage#index'  
   post 'users/add' => 'user#add'
   post 'users/login' => 'user#login'
 
