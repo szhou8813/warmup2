@@ -8,17 +8,17 @@ class User < ActiveRecord::Base
     validates :name, length: {
         minimum: 1,
         maximum: 128,
-        message: -3
+        message: ERR_BAD_USERNAME
     }
 
     validates :password, length: {
         minimum: 1,
         maximum: 128,
-        message: -4
+        message: ERR_BAD_PASSWORD
     }
 
     validates :name, uniqueness: {
-        message: -2
+        message: ERR_USER_EXISTS
     }
 
 end

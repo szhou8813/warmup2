@@ -32,6 +32,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+#Heroku compatibility
+
+gem 'rails_12factor', group: :production
+gem 'rails_serve_static_assets', group: :production
+
+gem 'rspec-rails'
+#
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

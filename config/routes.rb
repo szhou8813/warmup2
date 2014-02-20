@@ -4,8 +4,9 @@ Warmup::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   #  root 'user#index'
-  get '/users/login', to: 'user#login'
-  get '/users/add', to: 'user#add'
+  post 'users/add' => 'user#add'
+  post 'users/login' => 'user#login'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
