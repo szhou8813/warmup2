@@ -7,6 +7,7 @@ Warmup::Application.routes.draw do
   root 'mainpage#index'  
   post 'users/add' => 'user#add'
   post 'users/login' => 'user#login'
+  post 'TESTAPI/resetFixture', to: 'testapi#reset_fixture'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
